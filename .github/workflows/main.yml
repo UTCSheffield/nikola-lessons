@@ -1,2 +1,12 @@
-- name: Deploy Nikola to GitHub Pages
-  uses: getnikola/nikola-action@v8
+name: Build distribution
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: Deploy Nikola to GitHub Pages
+        uses: getnikola/nikola-action@v8
+    
