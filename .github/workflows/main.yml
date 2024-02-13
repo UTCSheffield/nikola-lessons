@@ -1,0 +1,2 @@
+- name: Deploy Nikola to GitHub Pages
+  uses: getnikola/nikola-action@v8
